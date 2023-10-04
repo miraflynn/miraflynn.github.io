@@ -1,0 +1,276 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+% \usepackage[explicit]{titlesec}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+% \usepackage{fontspec}
+
+% \usepackage{tgadventor}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+% \titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% \titleformat{<command>}[<shape>]{<format>}{<label>}{<sep>}{<before-code>}[<after-code>]
+% \titleformat{\section}{\vspace{-4pt}\raggedright\large }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\titleformat{\section}{\vspace{-4pt}\raggedright\large\uppercase}{}{0em}{}[\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      % \textit{\small#3} & \textit{\small #4} \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+% \begin{center}
+%     \textbf{\Huge \scshape Mira Flynn} \\ \vspace{1pt}
+%     \small 646-565-9754 $|$ \href{mailto:miraflynn0@gmail.com}{\underline{miraflynn0@gmail.com}} $|$
+%     \href{https://miraflynn.github.io/}{\underline{miraflynn.github.io}} $|$ 
+%     \href{https://www.linkedin.com/in/mira-flynn/}{\underline{linkedin.com/in/mira-flynn}} $|$
+%     \href{https://github.com/miraflynn}{\underline{github.com/miraflynn}}
+% \end{center}
+
+\begin{center}
+    \textbf{\Huge \scshape Mira Flynn} \\ \vspace{1pt}
+    \small 646-565-9754 $|$ \href{mailto:miraflynn0@gmail.com}{miraflynn0@gmail.com} $|$
+    \href{https://miraflynn.github.io/}{miraflynn.github.io} $|$
+    \href{https://www.linkedin.com/in/mira-flynn/}{linkedin.com/in/mira-flynn} $|$
+    \href{https://github.com/miraflynn}{github.com/miraflynn}
+\end{center}
+\vspace{-12pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Olin College of Engineering}{Aug. 2019 -- May 2023}
+      {Bachelor of Science in Engineering: Computing}{Needham, MA} 
+      \vspace{2pt} \\
+      \small Recipient of 50\% Tuition Merit Scholarship \normalsize\\
+      \vspace{2pt}
+      % \textbf{Selected Coursework}{: SCOPE, Technology, Accessibility, and Design, Probabilistic Modeling, Astronomy and Statistics, Sustainability: Science, Society, and Systems, Principles of Integrated Engineering, Discrete Math, Computer Architecture, Complexity Science, Software Systems, Engineering Systems Analysis, User Oriented Collaborative Design, Quantitative Engineering Analysis, Foundations of Computer Science, Data Science, Microelectronic Circuits, Modeling and Simulation, Sensors, Instrumentation and Measurement}
+      \textbf{Selected Coursework}{\small: SCOPE, Technology, Accessibility, and Design, Probabilistic Modeling, Astronomy and Statistics, Principles of Integrated Engineering, Discrete Math, Computer Architecture, Complexity Science, Software Systems, Engineering Systems Analysis, Quantitative Engineering Analysis, Foundations of Computer Science, Data Science, Microelectronic Circuits, Modeling and Simulation\normalsize}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Data Analytics and Management Intern}{Jun. 2022 -- Aug. 2022}
+      {Pfizer}{}
+      \resumeItemListStart
+        \resumeItem{Investigated the business uses of project management data and create a dashboard to highlight important characteristics of the project portfolio}
+        \resumeItem{Processed and visualized data to highlight important aspects for easy identification by project portfolio managers}
+        \resumeItem{Discovered situations where business necessities override other characteristics in choosing software tools}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    % \resumeSubheading
+    %   {Data Science Teaching Assistant}{Sep. 2021 -- May 2023}
+    %   {Olin College of Engineering}{Needham, MA}
+    %   \resumeItemListStart
+    %     \resumeItem{Assisted in teaching probability and statistics, programming in R, and effective visual communication of information}
+    %     \resumeItem{Graded assignments and assisted students with questions and topics they were be confused about}
+    % \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Astronomy and Statistics Teaching Assistant}{Sep. 2022 -- Dec. 2022}
+    %   {Olin College of Engineering}{Needham, MA}
+    %   \resumeItemListStart
+    %     \resumeItem{Assisted in teaching probability and statistics, programming in Python, and effective visual communication of information}
+    %     \resumeItem{Helped students work through project roadblocks and assisted in scientific writing about their projects}
+    % \resumeItemListEnd
+
+    \resumeSubheading
+      {Teaching Assistant- Data Science, Astronomy and Statistics}{Sep. 2021 -- May 2023}
+      {Olin College of Engineering}{Needham, MA}
+      \resumeItemListStart
+        \resumeItem{Assisted in teaching probability and statistics, programming in R and Python, and effective visual communication of information}
+        \resumeItem{Graded assignments and assisted students with questions and topics they were be confused about}
+        \resumeItem{Helped students work through project roadblocks and assisted in scientific writing about their projects}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Researcher - Qualitative Interview-Based Research}{Jun. 2021 -- Aug. 2021}
+      {Olin College of Engineering}{Needham, MA}
+      \resumeItemListStart
+        \resumeItem{Worked with Professor Zach del Rosario to research how engineers process uncertainty in data}
+        \resumeItem{Interviewed engineering students using an IRB-approved protocol}
+        \resumeItem{Developed and applied a formal interview coding protocol}
+        \resumeItem{Co-authored "A Qualitative Study of Engineering Students’ Reasoning About Statistical Variability" (2021, Under Review)}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Researcher - Shared Mobility Systems}{Jun. 2020 -- Aug. 2020}
+      {Olin College of Engineering}{Needham, MA}
+      \resumeItemListStart
+        \resumeItem{Worked with Professor Alice Paul and City of Providence to research equity in their shared mobility systems}
+        \resumeItem{Discovered systemic inequities and offered insight into how the shared mobility systems could better serve the city as a whole}
+        \resumeItem{Used R to model system demand and usage patterns, and data analysis techniques including linear regression, decision trees, and several clustering algorithms to compare those patterns to demographic data}
+        \resumeItem{Used Shiny and Leaflet packages to create an application to visualize and explore our model output}
+    \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Residential Resource}{Aug. 2020 -- May 2022}
+    %   {Olin College of Engineering}{Needham, MA}
+    %   \resumeItemListStart
+    %     \resumeItem{Demonstrated leadership and initiative in helping others with personal, social, and academic needs, especially with first year students transitioning from high school to college}
+    %     \resumeItem{Developed a sense of community despite distance learning and social distancing}
+    % \resumeItemListEnd
+
+    
+
+  \resumeSubHeadingListEnd
+
+
+% -----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{National High Injury Network Analysis Tool} $|$ \emph{Python, Flask, SQL, AWS, NumPy, Pandas}}{Sep. 2022 -- May 2023}\\
+          \resumeItemListStart
+            \resumeItem{Worked in a team of 5, using an Agile development process}
+            \resumeItem{Developed a full-stack web application using with Flask interfacing with an AWS database}
+            \resumeItem{Researched user needs and designed an application to fulfill them}
+            \resumeItem{Developed an algorithm using OSMnx (OpenStreetMap data), NumPy, Pandas, SciPy, and Shapely to find the most dangerous roads in an area}
+          \resumeItemListEnd
+          % \vspace{8pt}
+          % NHAT was developed by Olin College Students (including myself) as a Senior Capstone Project in 2023. National High Injury Network Analysis Tool (NHAT) is a free national tool that allows communities to generate interactive HIN maps and understand the relationship between safety, equity, and other contextual factors.
+      % \resumeProjectHeading
+      %     {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+      %     \resumeItemListStart
+      %       \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+      %       \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+      %       \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+      %       \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+      %     \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, R, SQL, Arduino, MATLAB, JavaScript, HTML, PHP, OCAML, C} \\
+     % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     \textbf{Developer Tools}{: Git/GitHub, Amazon Web Services (AWS), VS Code, RStudio, Spotfire, Alteryx, Jira} \\
+     \textbf{Libraries}{: NumPy, Pandas, GeoPandas, SciPy, OSMnx, Shapely, Matplotlib, Tidyverse, R Shiny, Leaflet}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
